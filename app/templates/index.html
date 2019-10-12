@@ -1,4 +1,9 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block body %}
+<ul class="list-group">
+  {% for source in sources %}
+  <li class="list-group-item">{{ source.name}}</li>
+  {% endfor %}
+</ul>
 {% endblock %}
