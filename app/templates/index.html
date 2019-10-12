@@ -3,7 +3,10 @@
 {% block body %}
 <ul class="list-group">
   {% for source in sources %}
-  <li class="list-group-item">{{ source.name}}</li>
+  <li class="list-group-item highlight">
+    <h5>{{source.name}}</h5>
+    <p>{{source.description}}</p>
+  </li>
   {% endfor %}
 </ul>
 {% endblock %}
