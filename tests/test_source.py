@@ -1,6 +1,4 @@
 import unittest
-import sys
-sys.path.append('./app')
 from app.models import Source
 
 class TestSource(unittest.TestCase):

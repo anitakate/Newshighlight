@@ -49,31 +49,24 @@ As a user I would like to:
 
         $ python3.7 -m pip install Flask
         $ python3.7 -m pip install Flask-Bootstrap
-        $ python3.7 -m pip install Flask-Script
+        $ python3.7 -m pip install arrow
+        $ python3.7 -m pip install requests
         
 * Setting up the API Key
         
         To be able to gather article info from the News API you will need an API Key.
         
         * Visit https://newsapi.org/ and register for an API key.
-        * In the root directory of the project folder create a file: start.sh
-        * Insert the following info into it: 
-        
-                export NEWS_API_KEY='<Your-Api-Key>'
-                python3.7 manage.py server
-                
         * Insert the API Key you received from News Api where <Your-Api-Key> is.
         
 * To run the application, in your terminal:
+        $ python3.7 run.py
 
-        $ chmod +x start.sh
-        $ ./start.sh
-        
 ## Testing the Application
 * To run the tests for the class files:
 
-        $ python3.7 run.py
-        
+        $ python3.7 -m unittest discover -s tests
+   
 ## Technologies Used
 * Python3.7
 * Flask
